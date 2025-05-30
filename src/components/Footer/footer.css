@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 2em;
+    text-align: center;
+
+    background-color: var(--color-secundario);
+    color: white;
+    
+    ul {
+        list-style-type: none;
+        li {
+            padding: 3px;
+            font-size: 1.1em;
+        }
+    }
+
+    strong {
+        color: var(--color-primario);
+    }
+}
+
+/*
+@media (width < 550px){
+    footer{
+        padding-bottom: 4em;
+    }
+}
+*/

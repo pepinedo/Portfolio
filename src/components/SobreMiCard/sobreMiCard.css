@@ -1,0 +1,38 @@
+.sobreMi-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    gap: 10px;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 2em;
+    
+    background-color: var(--color-tarjetas);
+    color: white;
+
+    .foto {
+        border-radius: 1em;
+        max-width: 250px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+
+        h1 {
+            color: var(--color-primario);
+            font-size: 2.2em;
+        }
+    }
+}
+
+@media (width < 600px){
+    .sobreMi-card{
+        flex-direction: column;
+        .foto {
+            margin: 1em;
+        }
+    }
+}

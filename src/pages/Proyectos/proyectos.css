@@ -1,0 +1,10 @@
+.proyectos-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+
+    .y-muchos-mas{
+        color: white;
+        align-self: center;
+    }
+}

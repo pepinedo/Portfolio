@@ -1,0 +1,5 @@
+.sobreMi-section {
+    display: flex;
+    flex-direction: column;
+    padding-block: 2em;
+}
