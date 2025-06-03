@@ -3,30 +3,21 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    padding: 2em;
+
+    gap: 30px;
+    padding: 4em;
     text-align: center;
 
     background-color: var(--color-secundario);
-    color: white;
     
-    ul {
-        list-style-type: none;
-        li {
-            padding: 3px;
-            font-size: 1.1em;
-        }
-    }
-
-    strong {
+    h1, p {
+        font-family: var(--fuente-primaria);
         color: var(--color-primario);
     }
-}
-
-/*
-@media (width < 550px){
-    footer{
-        padding-bottom: 4em;
+    a {
+        font-family: var(--fuente-pixel);
+        text-decoration: none;
+        color: var(--color-fondo);
     }
+    
 }
-*/
