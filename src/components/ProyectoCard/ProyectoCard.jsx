@@ -2,9 +2,9 @@ import "./proyectoCard.css"
 
 export const ProyectoCard = ({elem}) => {
   return (
-    <article  className="proyecto-card" onClick={()=>window.open(elem.url)} key={elem.titulo}>
-        <img className="foto" src={elem.foto} alt={elem.titulo} />
-        <div>
+    <article  className="proyectoCard" onClick={()=>window.open(elem.url)} key={elem.titulo}>
+        <img className="proyectoCard__foto" src={elem.foto} alt={elem.titulo} />
+        <div className="proyectoCard__texto">
             <h1>{elem.titulo}</h1>
             {elem.descripcion.map((p)=>{
                 return(
@@ -14,14 +14,16 @@ export const ProyectoCard = ({elem}) => {
                     </>
                 )
             })}
+        <div className="proyectoCard__seccionNegra">
             <h2>Principales tecnologías utilizadas:</h2>
-            <div className="proyecto-card__tecnologias">
+            <div className="proyectoCard__tecnologias">
                 {elem.tecnologias.map((elem)=>{
                     return(
-                        <img className="tecnologia" src={elem.imagen} alt={elem.nombre} key={elem.nombre}/>
+                        <img src={elem.imagen} alt={elem.nombre} key={elem.nombre}/>
                     )
                 })}
             </div>
+        </div>
         </div>
     </article>
   )

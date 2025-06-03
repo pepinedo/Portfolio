@@ -33,6 +33,7 @@
 
         .presentacion__linkCV{
             background-color: var(--color-primario);
+            color: var(--color-secundario);
             border-radius: 8px;
             text-decoration: none;
             padding: 15px;

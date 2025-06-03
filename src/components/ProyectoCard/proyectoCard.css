@@ -1,65 +1,19 @@
-.proyecto-card {
-    background-color: var(--color-tarjetas);
-    color: var(--color-letras);
+.proyectoCard {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--color-primario);
 
-    max-width: 810px;
-    gap: 1em;
-    padding: 1em;
-    margin: 1em;
-    border-radius: 2em;
-
-    .foto {
-        border-radius: 1em;
-        max-width: 300px;
-        margin: 0.5em;
+    .proyectoCard__foto{
+        width: 200px;
     }
 
-    div{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        h1 {
-            color: var(--color-primario);
-            font-size: 2.2em;
-        }
-        h2 {
-            margin-top: 10px;
-        }
-    }
+    .proyectoCard__seccionNegra{
+        background-color: var(--color-secundario);
 
-    .proyecto-card__tecnologias {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-
-        .tecnologia {
-            max-width: 50px;
-        }
-    }
-
-
-    transition: 0.1s;
-    &:hover{
-        transform: scale(1.02);
-    }
-}
-
-@media(width < 850px){
-    .proyecto-card .foto{
-        max-width: 250px;
-    }
-}
-
-@media (width < 600px){
-    .proyecto-card{
-        grid-template-columns: 1fr;
-        .foto{
-            max-width: 200px;
+        .proyectoCard__tecnologias{
+            img {
+                width: 50px;
+            }
         }
     }
 }
