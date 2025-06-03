@@ -4,35 +4,38 @@ import { Estudios } from '../../pages/Estudios/Estudios'
 import { Tecnologias } from '../../pages/Tecnologias/Tecnologias'
 import { Proyectos } from '../../pages/Proyectos/Proyectos'
 import { SobreMi } from '../../pages/SobreMi/SobreMi'
+import { RedesSociales } from '../../components/RedesSociales/RedesSociales'
+import { Presentacion } from '../../components/Presentacion/Presentacion'
+import { BotonSeccion } from '../../components/BotonSeccion/BotonSeccion'
 
 export const Home = () => {
 
-	const [verEstudios, setVerEstudios] = useState(false)
+	const [verFormacion, setVerFormacion] = useState(false)
 	const [verProyectos, setVerProyectos] = useState(false)
 	const [verTech, setVerTech] = useState(false)
 	const [verSobreMi, setVerSobreMi] = useState(false)
 
 	function handleClick(info) {
-		if(info === "estudios"){
-			setVerEstudios(!verEstudios)
+		if(info === "Formación"){
+			setVerFormacion(!verFormacion)
 			setVerProyectos(false)
 			setVerTech(false)
 			setVerSobreMi(false)
 		}
-		else if(info === "proyectos"){
-			setVerEstudios(false)
+		else if(info === "Proyectos"){
+			setVerFormacion(false)
 			setVerProyectos(!verProyectos)
 			setVerTech(false)
 			setVerSobreMi(false)
 		}
-		else if(info === "tech"){
-			setVerEstudios(false)
+		else if(info === "Tecnologías"){
+			setVerFormacion(false)
 			setVerProyectos(false)
 			setVerTech(!verTech)
 			setVerSobreMi(false)
 		}
-		else if(info === "sobreMi"){
-			setVerEstudios(false)
+		else if(info === "Sobre mí"){
+			setVerFormacion(false)
 			setVerProyectos(false)
 			setVerTech(false)
 			setVerSobreMi(!verSobreMi)
@@ -41,37 +44,19 @@ export const Home = () => {
 
   return (
     <>
-		<section className='redes-sociales'>
-			<a href="https://github.com/pepinedo" target='_blank' rel="noopener noreferrer">
-				<img src="images/icons/github.png" alt="Icono de Github" />
-			</a>
-			<a href="https://www.linkedin.com/in/pedro-pinedo-cobo/" target='_blank' rel="noopener noreferrer">
-				<img src="images/icons/linkedin.png" alt="Icono de Linkedin" />
-			</a>
-		</section>
+		<RedesSociales />
 
-		<section className='home-header'>
-			<div className='present'>
-				<img src="images/avatar.png" alt="Pedro Pinedo Cobo con traje de chaqueta, con los brazos cruzados, sonriendo" />
-				<h1>Pedro Pinedo Cobo</h1>
-				<p><strong>Fullstack Developer</strong></p> 
-				<p>React | NodeJS | SpringBoot | SQL</p>
-			</div>
-			<div className="links-cv">
-				<a href='files/CV_Pedro_Pinedo_Cobo.pdf' target='_blank'>Ver CV</a>
-				<a href='files/CV_Pedro_Pinedo_Cobo.pdf' download={"files/CV_Pedro_Pinedo_Cobo.pdf"}>Descargar CV</a>
-			</div>
-		</section>
+		<Presentacion />
 
-		<section className="botones-section">
-			<button onClick={()=>handleClick("estudios")} className={verEstudios ? "active" : ""}>Estudios</button>
-			<button onClick={()=>handleClick("proyectos")} className={verProyectos ? "active" : ""}>Proyectos</button>
-			<button onClick={()=>handleClick("tech")} className={verTech ? "active" : ""}>Tecnologías</button>
-			<button onClick={()=>handleClick("sobreMi")} className={verSobreMi ? "active" : ""}>Sobre mí</button>
+		<section className="botonesSection">
+			<BotonSeccion handleClick={handleClick} seccion="Formación" variable={verFormacion} />
+			<BotonSeccion handleClick={handleClick} seccion="Proyectos" variable={verProyectos} />
+			<BotonSeccion handleClick={handleClick} seccion="Tecnologías" variable={verTech} />
+			<BotonSeccion handleClick={handleClick} seccion="Sobre mí" variable={verSobreMi} />
 		</section>
 
 		<section className="ver-seleccion">
-			{verEstudios && <Estudios /> }
+			{verFormacion && <Estudios /> }
 			{verProyectos && <Proyectos /> }
 			{verTech && <Tecnologias /> }
 			{verSobreMi && <SobreMi /> }

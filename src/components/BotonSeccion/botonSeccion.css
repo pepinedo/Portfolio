@@ -1,0 +1,29 @@
+.botonesSection__boton {
+        background-color: var(--color-fondo);
+        font-family: var(--fuente-pixel);
+        font-size: 1.5em;
+        border: 0;
+        gap: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .botonesSection__boton__subrallado{
+            position: relative;
+            height: 2px;
+            width: 92%;
+            background-color: var(--color-secundario);
+            transition: all 0.1s;
+        }
+
+        transition: all 0.1s;
+        &:hover {
+            transform: translateY(-2px);
+
+            .botonesSection__boton__subrallado{
+                box-shadow: 2px 4px 5px var(--color-secundario);
+            }
+        }
+}
