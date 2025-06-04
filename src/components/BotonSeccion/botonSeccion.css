@@ -27,3 +27,22 @@
             }
         }
 }
+
+@media (width < 800px) {
+    
+    .botonesSection__boton {
+        border: 3px dashed rgb(161, 160, 160);
+        border-radius: 3px;
+        gap: 10px;
+        width: 180px;
+        height: 50px;
+
+        .botonesSection__boton__subrallado{
+            display: none;
+        }
+
+        &:hover {
+            background-color: rgb(161, 160, 160) ;
+        }
+    }
+}

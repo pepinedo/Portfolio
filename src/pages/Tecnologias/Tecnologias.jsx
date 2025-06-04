@@ -16,6 +16,7 @@ export const Tecnologias = () => {
                             )
                         })}
                     </div>
+                    <br />
                 </article>
             )
         })}

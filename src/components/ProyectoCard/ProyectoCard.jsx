@@ -1,7 +1,17 @@
 import "./proyectoCard.css"
+import { motion } from "framer-motion"
 
 export const ProyectoCard = ({elem}) => {
+
+
   return (
+    <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+        className="card"
+    >
     <article  className="proyectoCard" onClick={()=>window.open(elem.url)} key={elem.titulo}>
         <img className="proyectoCard__foto" src={elem.foto} alt={elem.titulo} />
         <div className="proyectoCard__texto">
@@ -32,5 +42,6 @@ export const ProyectoCard = ({elem}) => {
             </div>
         </div>
     </article>
+    </motion.div>
   )
 }

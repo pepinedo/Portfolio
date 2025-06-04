@@ -4,9 +4,14 @@
     background-color: var(--color-primario);
     position: relative;
 
-    margin: 1em;
-    border-radius: 2px;
-    max-width: 680px;
+    border-radius: 5px;
+    max-width: 800px;
+
+    transition: 0.1s;
+    &:hover{
+        transform: translateY(-4px);
+        box-shadow: 2px 4px 6px -2px var(--color-secundario);
+    }
 
     .proyectoCard__foto {
         position: absolute;
@@ -53,10 +58,60 @@
 
         .proyectoCard__tecnologias{
             display: flex;
-            gap: 5px;
+            flex-wrap: wrap;
+            gap: 10px;
             img {
                 width: 50px;
             }
         }
+    }
+}
+
+@media (width < 800px){
+    .proyectoCard {
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+
+        .proyectoCard__foto {
+            position: relative;
+            width: 80%;
+            left: auto;
+            top: 2em;
+        }
+
+        .proyectoCard__texto{
+            grid-template-columns: 1fr;
+            padding: 1em;
+            justify-content: center;
+        }
+
+        .proyectoCard__seccionNegra{
+            grid-template-columns: 1fr;
+            width: 100%;
+            height: max-content;
+            justify-content: center;
+
+            div {
+                padding: 0.5rem;
+                padding-inline: 1rem;
+            }
+            .proyectoCard__tecnologias{
+                padding: 1em;
+            }
+        }
+
+    }
+}
+
+@media (width < 700px){
+    .proyectoCard{
+        max-width: 500px;
+    }
+}
+
+@media (width < 600px){
+    .proyectoCard{
+        max-width: 300px;
     }
 }

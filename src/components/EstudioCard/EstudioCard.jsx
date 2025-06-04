@@ -1,6 +1,8 @@
 import "./estudioCard.css"
+import { useEffect, useState } from "react"
 
 export const EstudioCard = ({elem}) => {
+
   return (
         <article className="estudio-card" key={elem.titulo}>
             <div className="top-card">

@@ -45,3 +45,15 @@
         }
     }
 }
+
+@media(width < 800px){
+    .tecnologias-section{
+        padding-block: 0;
+        margin-block: 0;
+
+
+        .grupo-tech h1 {
+            padding-block: 10px;
+        }
+    }
+}

@@ -10,10 +10,15 @@
 
         h1{
             font-family: var(--fuente-primaria);
+            font-size: 2rem;
         }
     
         p {
             font-family: var(--fuente-secundaria);
+        }
+
+        .presentacion__fullstack {
+            font-size: 1.3rem;
         }
     
         img {
@@ -24,13 +29,6 @@
             margin: 2em;
         }
 
-        .presentacion__lineaDivisoria{
-            height: 1px;
-            background-color: var(--color-secundario);
-            width: 50%;
-
-        }
-
         .presentacion__linkCV{
             background-color: var(--color-primario);
             color: var(--color-secundario);
@@ -39,6 +37,7 @@
             padding: 15px;
             padding-inline: 40px;
             margin: 1em;
+            
 
             font-family: var(--fuente-pixel);
             font-size: 1.3em;
@@ -49,4 +48,13 @@
                 transform: border-radius 0;
             }
     }
+}
+
+.presentacion__lineaDivisoria{
+    height: 1px;
+    background-color: var(--color-secundario);
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    margin: 1em;
 }
