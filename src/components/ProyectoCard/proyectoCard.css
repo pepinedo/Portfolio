@@ -1,16 +1,59 @@
 .proyectoCard {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-primario);
+    position: relative;
 
-    .proyectoCard__foto{
-        width: 200px;
+    margin: 1em;
+    border-radius: 2px;
+    max-width: 680px;
+
+    .proyectoCard__foto {
+        position: absolute;
+        left: 1.5em;
+        top: 2em;
+
+        width: 35%;
+        height: 80%;
+        border-radius: 2px;
+        object-position: left;
+        object-fit: cover;
+    }
+
+    .proyectoCard__texto {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        div {
+            padding: 1em;
+            h1 {
+                padding-top: 1em;
+                font-size: 1.2em;
+                font-family: var(--fuente-primaria);
+            }
+            p {
+
+                font-family: var(--fuente-secundaria);
+            }
+        }
     }
 
     .proyectoCard__seccionNegra{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
         background-color: var(--color-secundario);
 
+        div {
+            padding: 1em;
+            h2 {
+                font-size: 1em;
+                font-family: var(--fuente-pixel);
+                color: var(--color-fondo);
+            }
+        }
+
         .proyectoCard__tecnologias{
+            display: flex;
+            gap: 5px;
             img {
                 width: 50px;
             }

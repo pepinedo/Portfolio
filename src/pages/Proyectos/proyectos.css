@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     padding-top: 2em;
+    gap: 1em;
 
     .y-muchos-mas{
-        color: white;
+        color: var(--color-secundario);
         align-self: center;
     }
 }

@@ -35,7 +35,7 @@ export const tecnologias = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
             },
             {
-                nombre: "React Bootstrap",
+                nombre: "ReactBootstrap",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg"
             },
             {
@@ -43,7 +43,7 @@ export const tecnologias = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg"
             },
             {
-                nombre: "Chrome Dev Tools",
+                nombre: "Dev Tools",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg"
             },
             {
