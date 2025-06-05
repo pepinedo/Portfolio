@@ -28,7 +28,7 @@ export const estudios = [
         {
         titulo: "Desarrollo de Software",
         empresa: "42 Málaga",
-        fecha: "sep.2023 - Actualidad",
+        fecha: "Sep.2023 - May.2025",
         detalles: [
             "Fundamentos de C: variables, funciones, punteros, estructuras, listas, señales...",
             "Proyectos en C: algoritmos, replicación de funciones, programas, videojuegos...",
@@ -40,7 +40,7 @@ export const estudios = [
     {
         titulo: "Máster en  RRHH",
         empresa: "UMA",
-        fecha: "sep.2023 - jun.2024",
+        fecha: "Sep.2023 - Jun.2024",
         detalles: [
             "Entrevistas, pruebas psicotécnicas, assessment centers y uso de plataformas (LinkedIn Talent, InfoJobs).",
             "Diseño de planes de formación, evaluación del desempeño (OKRs/KPIs) y retención de empleados.",
@@ -53,7 +53,7 @@ export const estudios = [
     {
         titulo: "Grado en Psicología",
         empresa: "UNED",
-        fecha: "sep.2016 - jun.2021",
+        fecha: "Sep.2016 - Jun.2021",
         detalles: [
             "Evaluación psicológica mediante diferentes tests estandarizados (WAIS, MMPI, TAT) e informes clínicos.",
             "Técnicas de intervención para los diferentes trastornos psicológicos",

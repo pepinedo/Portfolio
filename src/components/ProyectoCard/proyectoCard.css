@@ -9,7 +9,7 @@
 
     transition: 0.1s;
     &:hover{
-        transform: translateY(-4px);
+        transform: translateY(-3px) translateX(-2px);
         box-shadow: 2px 4px 6px -2px var(--color-secundario);
     }
 
@@ -46,6 +46,7 @@
         display: grid;
         grid-template-columns: 2fr 3fr;
         background-color: var(--color-secundario);
+        border-radius: 5px;
 
         div {
             padding: 1em;
