@@ -10,6 +10,8 @@
         h1 {
             font-size: 2.5em;
             padding-block: 1em;
+            font-family: var(--fuente-secundaria);
+            color: var(--color-secundario)
         }
         .div-tech-cartas{
             display: grid;
@@ -40,6 +42,18 @@
             .div-tech-cartas{
                 grid-template-columns: repeat(1, minmax(150px, 1fr));
             }
+        }
+    }
+}
+
+@media(width < 800px){
+    .tecnologias-section{
+        padding-block: 0;
+        margin-block: 0;
+
+
+        .grupo-tech h1 {
+            padding-block: 10px;
         }
     }
 }

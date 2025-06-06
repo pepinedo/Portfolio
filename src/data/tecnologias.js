@@ -1,6 +1,6 @@
 export const tecnologias = [
     {
-        grupo: "🖥️Front-End",
+        grupo: "Front-End",
         tecnologias: [
             {
                 nombre: "HTML5",
@@ -35,7 +35,7 @@ export const tecnologias = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
             },
             {
-                nombre: "React Bootstrap",
+                nombre: "ReactBootstrap",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg"
             },
             {
@@ -43,7 +43,7 @@ export const tecnologias = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg"
             },
             {
-                nombre: "Chrome Dev Tools",
+                nombre: "Dev Tools",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg"
             },
             {
@@ -53,7 +53,7 @@ export const tecnologias = [
         ]
     },
     {
-        grupo: "⚙️Back-End",
+        grupo: "Back-End",
         tecnologias: [
             {
                 nombre: "NodeJS",
@@ -90,29 +90,7 @@ export const tecnologias = [
         ]
     },
     {
-        grupo: "⌨️Sistemas",
-        tecnologias: [
-            {
-                nombre: "Windows",
-                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg"
-            },
-            {
-                nombre: "CentOS",
-                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/centos/centos-original.svg"
-            },
-            {
-                nombre: "linux",
-                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
-            },
-            {
-                nombre: "Ubuntu",
-                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg"
-            },
-            
-        ]
-    },
-    {
-        grupo: "🛠️Otros",
+        grupo: "Otros",
         tecnologias: [
             {
                 nombre: "C",
@@ -145,6 +123,22 @@ export const tecnologias = [
             {
                 nombre: "Salesforce",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg"
+            },
+                        {
+                nombre: "Windows",
+                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg"
+            },
+            {
+                nombre: "CentOS",
+                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/centos/centos-original.svg"
+            },
+            {
+                nombre: "linux",
+                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+            },
+            {
+                nombre: "Ubuntu",
+                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg"
             },
         ]
     },

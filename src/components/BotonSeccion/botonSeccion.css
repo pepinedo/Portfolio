@@ -1,29 +1,69 @@
 .botonesSection__boton {
-        background-color: var(--color-fondo);
-        font-family: var(--fuente-pixel);
-        font-size: 1.5em;
-        border: 0;
-        gap: 10px;
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-pixel);
+    font-size: 1.5em;
+    border: 0;
+    gap: 10px;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .botonesSection__boton__subrallado{
+        position: relative;
+        height: 2px;
+        width: 92%;
+        background-color: var(--color-secundario);
+        transition: all 0.1s;
+    }
+
+    transition: all 0.1s;
+    &:hover {
+        transform: translateY(-2px);
 
         .botonesSection__boton__subrallado{
-            position: relative;
-            height: 2px;
-            width: 92%;
-            background-color: var(--color-secundario);
-            transition: all 0.1s;
+            box-shadow: 2px 4px 5px var(--color-secundario);
         }
-
-        transition: all 0.1s;
-        &:hover {
-            transform: translateY(-2px);
-
-            .botonesSection__boton__subrallado{
-                box-shadow: 2px 4px 5px var(--color-secundario);
-            }
+    }
+    .botonesSection__boton__subrallado--active {
+        transform: translateY(-2px);
+        
+        .botonesSection__boton__subrallado{
+            box-shadow: 2px 4px 5px var(--color-secundario);
         }
+    }
 }
+
+.botonesSection__boton--active {
+    transform: translateY(-2px);
+
+    .botonesSection__boton__subrallado{
+        box-shadow: 2px 4px 5px var(--color-secundario);
+    }
+}
+
+
+@media (width < 800px) {
+    
+    .botonesSection__boton {
+        border: 3px dashed rgb(161, 160, 160);
+        border-radius: 3px;
+        gap: 10px;
+        width: 180px;
+        height: 50px;
+
+        .botonesSection__boton__subrallado{
+            display: none;
+        }
+
+        &:hover {
+            background-color: rgb(161, 160, 160);
+        }
+    }
+
+    .botonesSection__boton--active{
+        background-color: rgb(161, 160, 160);
+    }
+}
+

@@ -1,38 +1,52 @@
-.sobreMi-card {
+.sobreMiCard {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
     max-width: 800px;
     gap: 10px;
-    padding: 1em;
-    margin: 1em;
-    border-radius: 2em;
+    padding: 2em;
+    margin: 10px;
+    border-radius: 5px;
     
-    background-color: var(--color-tarjetas);
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
 
-    .foto {
-        border-radius: 1em;
-        max-width: 250px;
+    .sobreMiCard__foto {
+        border-radius: 5px;
+        max-width: 40%;
+        max-height: 90%;
+        background-repeat: no-repeat;
+        object-fit: scale-down;
     }
 
-    div{
+    .sobreMiCard__texto{
         display: flex;
         flex-direction: column;
         padding: 1em;
 
         h1 {
-            color: var(--color-primario);
+            color: var(--color-secundario);
             font-size: 2.2em;
         }
+    }
+
+    .sobreMiCard__LineaAbajo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6px;
+        width: 100%;
+        background-color: var(--color-secundario);
     }
 }
 
 @media (width < 600px){
-    .sobreMi-card{
+    .sobreMiCard{
         flex-direction: column;
-        .foto {
-            margin: 1em;
+        .sobreMiCard__foto {
+            max-width: 90%;
         }
     }
 }

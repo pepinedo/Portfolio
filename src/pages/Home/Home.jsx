@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './home.css'
 import { Estudios } from '../../pages/Estudios/Estudios'
 import { Tecnologias } from '../../pages/Tecnologias/Tecnologias'
@@ -14,6 +14,26 @@ export const Home = () => {
 	const [verProyectos, setVerProyectos] = useState(false)
 	const [verTech, setVerTech] = useState(false)
 	const [verSobreMi, setVerSobreMi] = useState(false)
+
+	const [movil, setMovil] = useState(false);
+	const [anchoPantalla, setAnchoPantalla] = useState(window.innerWidth)
+
+	useEffect(()=>{
+		const manejarResize =()=>{
+			setAnchoPantalla(window.innerWidth)
+		}
+		window.addEventListener('resize', manejarResize)
+
+		if(anchoPantalla < 800){
+			setMovil(true)
+		}
+		else{
+			setMovil(false)
+		}
+		console.log(anchoPantalla);
+		
+
+	},[anchoPantalla])
 
 	function handleClick(info) {
 		if(info === "Formación"){
@@ -50,17 +70,21 @@ export const Home = () => {
 
 		<section className="botonesSection">
 			<BotonSeccion handleClick={handleClick} seccion="Formación" variable={verFormacion} />
+				{movil & verFormacion ? <Estudios /> : null }
 			<BotonSeccion handleClick={handleClick} seccion="Proyectos" variable={verProyectos} />
+				{movil & verProyectos ? <Proyectos /> : null }
 			<BotonSeccion handleClick={handleClick} seccion="Tecnologías" variable={verTech} />
+				{movil & verTech ? <Tecnologias /> : null }
 			<BotonSeccion handleClick={handleClick} seccion="Sobre mí" variable={verSobreMi} />
+				{movil & verSobreMi ? <SobreMi /> : null }
 		</section>
 
-		<section className="ver-seleccion">
-			{verFormacion && <Estudios /> }
-			{verProyectos && <Proyectos /> }
-			{verTech && <Tecnologias /> }
-			{verSobreMi && <SobreMi /> }
-		</section>
+		{!movil && <section className="ver-seleccion">
+			{!movil & verFormacion ? <Estudios /> : null }
+			{(!movil & verProyectos) ? <Proyectos /> : null }
+			{!movil & verTech ? <Tecnologias /> : null }
+			{!movil &verSobreMi ? <SobreMi /> : null }
+		</section>}
 
 		<br />
 		<br />

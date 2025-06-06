@@ -2,9 +2,18 @@
     display: flex;
     flex-direction: column;
     padding-top: 2em;
+    gap: 1em;
 
     .y-muchos-mas{
-        color: white;
+        color: var(--color-secundario);
+        font-family: var(--fuente-secundaria);
+        padding-top: 1.5em;
         align-self: center;
+    }
+}
+
+@media (width < 800px){
+    .proyectos-section {
+        padding-top: 0;
     }
 }

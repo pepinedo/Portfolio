@@ -41,3 +41,14 @@ main {
     --font-size-pequeña: 0.4em;
 
 }
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.noVisible {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}

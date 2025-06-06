@@ -1,7 +1,17 @@
 .botonesSection {
     display: grid;
     grid-template-columns: repeat(4, minmax(150px, 1fr));
+    justify-items: center;
     gap: 26px;
+}
+
+@media (width < 800px){
+    .botonesSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .ver-seleccion {
