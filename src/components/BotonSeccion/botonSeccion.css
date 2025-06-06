@@ -19,11 +19,13 @@
     }
 
     transition: all 0.1s;
-    &:hover {
-        transform: translateY(-2px);
-
-        .botonesSection__boton__subrallado{
-            box-shadow: 2px 4px 5px var(--color-secundario);
+    @media (hover:hover) {
+        &:hover {
+            transform: translateY(-2px);
+    
+            .botonesSection__boton__subrallado{
+                box-shadow: 2px 4px 5px var(--color-secundario);
+            }
         }
     }
     .botonesSection__boton__subrallado--active {
