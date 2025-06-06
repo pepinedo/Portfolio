@@ -6,6 +6,8 @@
 
     .y-muchos-mas{
         color: var(--color-secundario);
+        font-family: var(--fuente-secundaria);
+        padding-top: 1.5em;
         align-self: center;
     }
 }

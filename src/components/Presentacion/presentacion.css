@@ -43,10 +43,9 @@
             font-family: var(--fuente-pixel);
             font-size: 1.3em;
 
-            transition: all 0.1s;
+            transition: all 0.4s;
             &:hover{
-                border-radius: 0%;
-                transform: border-radius 0;
+                background-color: #bad65e;
             }
     }
 }

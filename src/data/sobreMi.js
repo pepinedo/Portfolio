@@ -21,9 +21,9 @@ export const sobreMi = [
         descripcion: [
             'Otro de mis grandes hobbies son los juegos de mesa. Grandes, chicos, largos, cortos, de cartas, de miniaturas, de rol,... Lo que me gusta es jugar y pasar el rato con los amigos. ',
             'Lo que más valoro de esto es la diversidad. Puedes pasar de un juego cooperativo donde todos luchan con un objetivo común, a un juego competitivo, donde todos lucháis para ver quién se hace con la victoria.',
-            'Aún así, si que quiero destacar Magic The Gathering. Llevo jugando Magic desde que tengo conciencia, minimo harán ya 20 años, con épocas de jugar más y de jugar menos, por su puesto.',
+            'Y bueno, quiero destacar Magic The Gathering juego que llevo jugando desde que tengo conciencia, minimo harán ya 20 años. Sin duda, mi juego de mesa favorito.',
             '',
         ],
-        foto: "images/sobreMi/juegosDeMesa1.jpeg"
+        foto: "images/sobreMi/juegosDeMesa.webp"
     },
 ]

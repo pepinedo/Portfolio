@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import "./botonSeccion.css"
 
-export function BotonSeccion({handleClick, seccion, variable}){
+export function BotonSeccion({handleClick, seccion}){
     return(
         <motion.div
             initial={{ opacity: 0, y: 20 }}
