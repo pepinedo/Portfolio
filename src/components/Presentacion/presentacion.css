@@ -15,6 +15,7 @@
     
         p {
             font-family: var(--fuente-secundaria);
+            text-wrap-mode: wrap;
         }
 
         .presentacion__fullstack {

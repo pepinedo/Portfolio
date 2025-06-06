@@ -8,7 +8,7 @@
     gap: 10px;
     padding: 2em;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     
     background-color: var(--color-primario);
     color: var(--color-secundario);
@@ -17,6 +17,8 @@
         border-radius: 5px;
         max-width: 40%;
         max-height: 90%;
+        background-repeat: no-repeat;
+        object-fit: scale-down;
     }
 
     .sobreMiCard__texto{
@@ -41,10 +43,10 @@
 }
 
 @media (width < 600px){
-    .sobreMi-card{
+    .sobreMiCard{
         flex-direction: column;
-        .foto {
-            margin: 1em;
+        .sobreMiCard__foto {
+            max-width: 90%;
         }
     }
 }
