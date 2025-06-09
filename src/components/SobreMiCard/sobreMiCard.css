@@ -67,23 +67,16 @@
             left: auto;
             top: 2em;
         }
+        .sobreMiCard__titulo{
+            grid-template-columns: 1fr;
+            padding: 2em;
+            justify-content: center;
+        }
 
         .sobreMiCard__texto{
             grid-template-columns: 1fr;
             padding: 1em;
             justify-content: center;
-        }
-
-        .sobreMiCard__seccionNegra{
-            grid-template-columns: 1fr;
-            width: 100%;
-            height: max-content;
-            justify-content: center;
-
-            div {
-                padding: 0.5rem;
-                padding-inline: 1rem;
-            }
         }
 
     }
