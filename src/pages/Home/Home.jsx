@@ -86,8 +86,7 @@ export const Home = () => {
 			{!movil &verSobreMi ? <SobreMi /> : null }
 		</section>}
 
-		<br />
-		<br />
+		<br /><br /><br /><br /><br /><br />
     </>
   )
 }

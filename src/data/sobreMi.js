@@ -1,28 +1,36 @@
 export const sobreMi = [
     {
+        titulo: "Orígenes",
+        descripcion: [
+            'Soy Pedro Pinedo Cobo, nací en 1996 en Málaga. Al cumplir los 18 años entré en el grado de Economía, pero no me estimuló lo suficente.',
+            'Al siguiente año decidí estudiar Psicología. Aprendí mucho sobre mí mismo y sobre el comportamiento del ser humano. Me hizo crecer como persona.',
+            'Siempre me ha gustado ayudar a los demás, así que opté por prepararme el PIR (Psicólogo Interno Residente), oposición que estuve 2 años estudiando. Pero me dí cuenta que necesitaba algo más práctico y me aventuré hacia un nuevo camino.',
+        ],
+        foto: "images/sobreMi/origenesTeemo.jpeg"
+    },
+    {
+        titulo: "¿Y por qué programación?",
+        descripcion: [
+            'Debido a que estudíe Psicología, decidí especializarme en RRHH, con el objetivo de ser IT Recruiter. Paralelamente, para complementar mi formación, empecé a estudiar programación en la escuela 42 Málaga donde casualmente encontré mi verdadera pasión.',
+            'En 42 aprendí C e hice grandes compañeros y, tras superar diferentes retos, me decanté por el Desarrollo de Software. Más tarde, en Socratech fue donde pude desarrollar los conocimientos que me proporcionaron las habilidades para ser un profesional de este área.',
+        ],
+        foto: "images/sobreMi/WeLoveCode2.jpeg"
+    },
+    {
         titulo: "La escalada",
         descripcion: [
-            'Hace 4 años descubrí la "escalada deportiva". En ese momento iba al gimnasio y siempre que todaba la hora de ir hacía un enorme esfuerzo. ¿Porqué? Pues porque no me gustaba, iba por estar sano y hacer ejercicio, pero era un suplicio, hasta que un día un amigo me avisó para ir con el a la montaña. Al principio era muy reticente, puesto que tengo vértigo a las alturas, pero subí esos 35 metros.',
-            'A partir de ese día pensé: ¿Y porqué no voy al rocódromo en vez de al gimnasio? O sea, aparte de hacer deporte, me lo paso bien. Y desde entonces esa es mi rutina, ir al rocódromo entre semana y los fines de semana que puedo ir a la montaña.'
+            'Hace 4 años descubrí la Escalada Deportiva. Un amigo me invitó a ir a la montaña, y como soy una persona deportista y muy curiosa, le dije que sí.',
+            'Al principio fuí muy reticente, ya que tengo vértigo a las alturas, pero conseguí superar mi miedo subiendo aquellos 35 metros.',
+            'A partir de ese día, comencé a ir al rocódromo semanalmente y, siempre que puedo, voy con mis amigos a la montaña a disfrutar de la naturaleza.',
         ],
         foto: "images/sobreMi/escalada.jpeg"
-    },
-        {
-        titulo: "Arwen",
-        descripcion: [
-            'Te presento a Arwen, mi sobrina. Hace muy poquito mi hermana adquirió a su pequeña hija. Es monísima ¿A que sí? Y encima es buenisima, se deja hacer de todo, es un peluchito. ',
-            'Es la alegría de la familia, siempre que te ve se pone contentísima y quiere que le hagas todo tipo de mimitos, de hecho, el único momento en el que ladra es cuando te ve, que se pone super contenta.',
-            'Uno de sus momentos más adorables es cuando se queda dormida. Se acurruca como un ovillito, con sus patitas bajo el ocico.'
-        ],
-        foto: "images/sobreMi/Arwen.jpeg"
     },
     {
         titulo: "Juegos de mesa",
         descripcion: [
-            'Otro de mis grandes hobbies son los juegos de mesa. Grandes, chicos, largos, cortos, de cartas, de miniaturas, de rol,... Lo que me gusta es jugar y pasar el rato con los amigos. ',
-            'Lo que más valoro de esto es la diversidad. Puedes pasar de un juego cooperativo donde todos luchan con un objetivo común, a un juego competitivo, donde todos lucháis para ver quién se hace con la victoria.',
-            'Y bueno, quiero destacar Magic The Gathering juego que llevo jugando desde que tengo conciencia, minimo harán ya 20 años. Sin duda, mi juego de mesa favorito.',
-            '',
+            'Otro de mis hobbies son los juegos de mesa. Ya sean de cartas, de miniaturas, de rol... Lo que más me gusta es jugar y pasar el rato con amigos y mi familia.',
+            'De lo que más valoro es la diversidad que ofrecen. Puedes pasar de un juego cooperativo donde todos luchan por un objetivo común, a un juego competitivo para ver quién se alza con la victoria.',
+            `No puedo no mencionar Magic: The Gathering, un juego que llevo jugando desde que tengo conciencia, como mínimo harán ya 20 años. Sin duda, mi juego de mesa favorito.`,
         ],
         foto: "images/sobreMi/juegosDeMesa.webp"
     },

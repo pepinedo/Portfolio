@@ -59,8 +59,10 @@
             display: none;
         }
 
-        &:hover {
-            background-color: rgb(161, 160, 160);
+        @media(hover:hover){
+            &:hover {
+                background-color: rgb(161, 160, 160);
+            }
         }
     }
 
