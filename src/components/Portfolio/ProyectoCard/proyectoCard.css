@@ -1,0 +1,107 @@
+.proyectoCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primario);
+    position: relative;
+
+    border-radius: 5px;
+    max-width: 800px;
+    margin-inline: 1.5em;
+
+    transition: 0.1s;
+    &:hover{
+        transform: translateY(-3px) translateX(-2px);
+        box-shadow: 2px 4px 6px -2px var(--color-secundario);
+    }
+
+    .proyectoCard__foto {
+        position: absolute;
+        left: 1.5em;
+        top: 2em;
+
+        width: 35%;
+        height: 80%;
+        border-radius: 2px;
+        object-position: left;
+        object-fit: cover;
+    }
+
+    .proyectoCard__texto {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        div {
+            padding: 1em;
+            h1 {
+                padding-top: 1em;
+                font-size: 1.2em;
+                font-family: var(--fuente-primaria);
+            }
+            p {
+                padding-top: 10px;
+                font-family: var(--fuente-secundaria);
+            }
+        }
+    }
+
+    .proyectoCard__seccionNegra{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        background-color: var(--color-secundario);
+        border-radius: 0 0 5px 5px ;
+
+        div {
+            padding: 1em;
+            h2 {
+                font-size: 1em;
+                font-family: var(--fuente-pixel);
+                color: var(--color-fondo);
+            }
+        }
+
+        .proyectoCard__tecnologias{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            img {
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media (width < 800px){
+    .proyectoCard {
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+
+        .proyectoCard__foto {
+            position: relative;
+            width: 80%;
+            left: auto;
+            top: 2em;
+        }
+
+        .proyectoCard__texto{
+            grid-template-columns: 1fr;
+            padding: 1em;
+            justify-content: center;
+        }
+
+        .proyectoCard__seccionNegra{
+            grid-template-columns: 1fr;
+            width: 100%;
+            height: max-content;
+            justify-content: center;
+
+            div {
+                padding: 0.5rem;
+                padding-inline: 1rem;
+            }
+            .proyectoCard__tecnologias{
+                padding: 1em;
+            }
+        }
+
+    }
+}

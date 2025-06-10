@@ -1,0 +1,151 @@
+.pokeCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 18em;
+    width: 288px;
+
+    background-color: white;
+    box-shadow: 0 0 5px 1px var(--color-sombreado);
+
+    .pokeCard__topCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        height: 50%;
+        width: 100%;
+
+        background-color: #dfdfdf;
+        box-shadow: 0 0 5px 1px var(--color-sombreado);
+
+        .pokeCard__topCard__foto {
+            justify-self: center;
+            align-self: center;
+            transition: 0.2s;
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            background-color: #d1ceca;
+            padding: .5em;
+            font-size: .8em;
+            font-weight: bold;
+            color: #93836a;
+        }
+    }
+
+    .pokeCard__bottonCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        gap: .2em;
+        padding: 1em;
+        height: 50%;
+        width: 100%;
+
+
+        .pokeCard__bottonCard__nombre-y-tipos {
+            height: 50%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 0.4em;
+
+            .pokeCard__bottonCard__nombre-y-tipos__nombre {
+                font-size: 1.5em;
+            }
+        }
+
+        .pokeCard__bottonCard__nombre-y-tipos__tipos {
+            display: flex;
+            gap: 0.2em;
+
+            p {
+                color: #93836a;
+                font-size: 0.85em;
+
+                padding-inline: .3em;
+                border: 1px solid #93836a;
+                border-radius: .4em;
+            }
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .pokeCard__bottonCard__preEv {
+            height: 50%;
+
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            gap: .2em;
+
+            .pokeCard__bottonCard__preEv__barra {
+                align-self: end;
+                height: 82%;
+                width: 0.25em;
+                background-color: #603a0d;
+            }
+
+            h2 {
+                opacity: 60%;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 1.3em;
+                font-weight: 500;
+            }
+        }
+    }
+
+    transition: .2s;
+
+    &:hover {
+        transform: scale(1.05);
+
+        .pokeCard__topCard__foto{
+            animation: pok_mov 0.3s;
+            scale: 1.3;
+        }
+    }
+}
+
+
+@keyframes pok_mov {
+
+    0%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-8px)
+    }
+
+    40% {
+        transform: translateY(-16px);
+    }
+
+    60% {
+        transform: translateY(-8px);
+    }
+
+    80% {
+        transform: translateY(8px);
+    }
+}

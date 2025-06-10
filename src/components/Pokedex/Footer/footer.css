@@ -1,0 +1,21 @@
+.Footer {
+    position: relative;
+
+    .Footer__moflete {
+        position: fixed;
+        bottom: -4em;
+        z-index: -1;
+
+        background-color: var(--color-mofletes);
+        width: 8em;
+        height: 8em;
+        border-radius: 50%;
+    }
+
+    .Footer__moflete--izquerda {
+        right: -4rem;
+    }
+    .Footer__moflete--derecha {
+        left: -4rem;
+    }
+}

@@ -15,7 +15,7 @@ export const proyectos = [
             },
         ],
         url: "https://github.com/pepinedo/so_long",
-        foto: "images/proyectos/PixelAdventure.jpeg"
+        foto: "Portfolio/images/proyectos/PixelAdventure.jpeg"
     },
     {
         titulo: "Hospitales Intergalácticos",
@@ -49,7 +49,7 @@ export const proyectos = [
             },
         ],
         url: "https://github.com/pepinedo/Proyecto-mitad-de-bootcamp-Socratech",
-        foto: "images/proyectos/hospital.png"
+        foto: "Portfolio/images/proyectos/hospital.png"
     },
     {
         titulo: "Poke-API",
@@ -71,7 +71,7 @@ export const proyectos = [
             },
         ],
         url: "",
-        foto: "images/proyectos/pokeAPI.jpeg"
+        foto: "Portfolio/images/proyectos/pokeAPI.jpeg"
     },
     {
         titulo: "WE PLAY Sports Experiences",
@@ -105,6 +105,6 @@ export const proyectos = [
             },
         ],
         url: "https://github.com/pepinedo/We-Play",
-        foto: "images/proyectos/WePlay.png"
+        foto: "Portfolio/images/proyectos/WePlay.png"
     },
 ]

@@ -1,23 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Home } from "../pages/Home/Home"
-import { Footer } from "../components/Footer/Footer"
+import { Footer } from "../components/Portfolio/Footer/Footer"
+import { Home } from "../pages/Portfolio/Home/Home"
 
 
 export const RoutesApp = () => {
 
     return(
-        <div>
-            <BrowserRouter>
-                <main>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                    </Routes>
-                </main>
-
-                <footer>
-                    <Footer />
-                </footer>
-            </BrowserRouter>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
