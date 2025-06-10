@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import { getPokemonDataCard } from "../../utils/apiUtils"
 import "./pokeCard.css"
 import { useNavigate } from "react-router-dom"
+import { getPokemonDataCard } from "../../../utils/apiUtils"
 
 export function PokeCard({pokemon}){
 

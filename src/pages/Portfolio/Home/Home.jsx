@@ -58,7 +58,7 @@ export const Home = () => {
 
   return (
     <>
-		<main>
+		<main className='portfolioMain'>
 			<RedesSociales />
 
 			<Presentacion />

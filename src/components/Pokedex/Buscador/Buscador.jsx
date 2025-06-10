@@ -1,8 +1,8 @@
 import { useContext, useState } from "react"
-import "./buscador.css"
-import { PokemonContext } from "../../context/ContextProvider"
-import { buscarPorNombre, buscarPorNumero } from "../../utils/buscadorUtils";
 import { useNavigate } from "react-router-dom";
+import "./buscador.css"
+import { PokemonContext } from "../../../context/ContextProvider";
+import { buscarPorNombre, buscarPorNumero } from "../../../utils/buscadorUtils";
 
 export function Buscador({reiniciar}){    
 

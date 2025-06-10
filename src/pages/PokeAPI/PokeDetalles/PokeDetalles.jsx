@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
-import "./pokeDetalles.css"
 import { useEffect, useState } from "react";
-import { getPokemonDataDetalles } from "../../utils/apiUtils";
+import "./pokeDetalles.css"
+import { getPokemonDataDetalles } from "../../../utils/apiUtils";
 
 export function PokeDetalles(){
 
@@ -39,14 +39,14 @@ export function PokeDetalles(){
             <div className="pokeDetalles__botones">
                 {id !== "1" && <img 
                     className="pokeDetalles__pag" 
-                    src="/icons/left-arrow.png" 
+                    src="/Pokedex/icons/left-arrow.png" 
                     alt="botón de anterior" 
                     onClick={anterior}
                     />}
-                <button onClick={()=>navigate("/")}>Home</button>
+                <button onClick={()=>navigate("/pokedex")}>Home</button>
                 {id !== "1025" && <img 
                     className="pokeDetalles__pag" 
-                    src="/icons/arrow-right.png" 
+                    src="/Pokedex/icons/arrow-right.png" 
                     alt="botn de siguiente"
                     onClick={siguiente}
                     />}

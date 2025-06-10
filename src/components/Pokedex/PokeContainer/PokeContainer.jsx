@@ -1,5 +1,5 @@
-import { PokeCard } from "../PokeCard/PokeCard"
 import "./pokeContainer.css"
+import { PokeCard } from "../PokeCard/PokeCard"
 
 export function PokeContainer({lista}){
 

@@ -1,11 +1,13 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 import "./pokedex.css"
-import { ContextProvider, PokemonContext } from "../../context/ContextProvider"
-import { PokeCard } from "../../components/PokeCard/PokeCard";
-import { PokeContainer } from "../../components/PokeContainer/PokeContainer";
-import { Buscador } from "../../components/Buscador/Buscador";
+import { ContextProvider, PokemonContext } from "../../../context/ContextProvider"
+import { Buscador } from "../../../components/Pokedex/Buscador/Buscador"
+import { PokeContainer } from "../../../components/Pokedex/PokeContainer/PokeContainer"
+import { main } from "framer-motion/client"
+import { Header } from "../../../components/Pokedex/Header/Header"
+import { Footer } from "../../../components/Pokedex/Footer/Footer"
 
-export function Home(){
+export function Pokedex(){
 
     const {allPokemon, cargando, lista, setLista, verCargarMas, setVerCargarMas} = useContext(PokemonContext)
 
@@ -31,11 +33,17 @@ export function Home(){
     
 
     return(
-        <section className="Home">
-            <Buscador reiniciar={obtener20primeros}/>
-            {cargando && <h1>Cargando...</h1>}
-            {lista && <PokeContainer lista={lista} />}
-            {verCargarMas && <button onClick={cargarMas} className="Home__cargarMas">Cargar más</button>}
-        </section>
+        <>
+        <Header />
+        <main className="pokedexMain">
+            <section className="Home">
+                <Buscador reiniciar={obtener20primeros}/>
+                {cargando && <h1>Cargando...</h1>}
+                {lista && <PokeContainer lista={lista} />}
+                {verCargarMas && <button onClick={cargarMas} className="Home__cargarMas">Cargar más</button>}
+            </section>
+        </main>
+        <Footer />
+        </>
     )
 }
