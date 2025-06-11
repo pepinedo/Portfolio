@@ -1,0 +1,20 @@
+.PokeFooter {
+    position: relative;
+
+    .PokeFooter__moflete {
+        position: fixed;
+        bottom: -4em;
+
+        background-color: var(--color-mofletes);
+        width: 8em;
+        height: 8em;
+        border-radius: 50%;
+    }
+
+    .PokeFooter__moflete--izquerda {
+        right: -4rem;
+    }
+    .PokeFooter__moflete--derecha {
+        left: -4rem;
+    }
+}

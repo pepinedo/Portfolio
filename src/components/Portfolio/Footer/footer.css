@@ -1,0 +1,23 @@
+.PortfolioFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+    padding: 4em;
+    text-align: center;
+
+    background-color: var(--color-secundario);
+    
+    h1, p {
+        font-family: var(--fuente-primaria);
+        color: var(--color-primario);
+    }
+    a {
+        font-family: var(--fuente-pixel);
+        text-decoration: none;
+        color: var(--color-fondo);
+    }
+    
+}

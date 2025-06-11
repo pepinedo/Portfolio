@@ -1,0 +1,37 @@
+.PokeHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1em;
+
+    .PokeHeader__orejita{
+        position: fixed;
+        top: -3em;
+        width: 6em;
+        height: 6em;
+        transform: rotate(45deg);
+        background-color: var(--color-orejitas);
+    }
+    .PokeHeader__orejita--izquierda {
+        left: -4em;
+    }
+
+    .PokeHeader__orejita--derecha {
+        right: -4em;
+    }
+}
+
+@media (width < 1100px) {
+
+    .PokeHeader {
+        width: 600px;
+    }
+}
+
+@media (width < 700px) {
+
+    .PokeHeader {
+        max-width: 302px;
+    }
+}

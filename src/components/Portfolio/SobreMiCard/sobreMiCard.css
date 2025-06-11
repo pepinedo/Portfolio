@@ -1,0 +1,83 @@
+.sobreMiCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primario);
+    position: relative;
+
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 1.5em;
+
+    transition: 0.1s;
+    &:hover{
+        transform: translateY(-3px) translateX(-2px);
+        box-shadow: 2px 4px 6px -2px var(--color-secundario);
+    }
+
+    .sobreMiCard__foto {
+        position: absolute;
+        left: 1.5em;
+        top: 2em;
+
+        width: 35%;
+        height: 82%;
+        border-radius: 2px;
+        object-position: left;
+        object-fit: cover;
+    }
+
+    .sobreMiCard__titulo {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        padding: 1em;
+        h1 {
+            padding-top: 1em;
+            font-size: 1.5em;
+            font-family: var(--fuente-primaria);
+        }
+    }
+
+    .sobreMiCard__texto{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        background-color: var(--color-secundario);
+        border-radius: 0 0 5px 5px ;
+
+        padding: 1em;
+        div {
+            font-size: 1em;
+            font-family: var(--fuente-secundaria);
+            color: var(--color-fondo);
+            p {
+                padding-block: 0.5em;
+            }
+        }
+    }
+}
+
+@media (width < 800px){
+    .sobreMiCard {
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+
+        .sobreMiCard__foto {
+            position: relative;
+            width: 80%;
+            left: auto;
+            top: 2em;
+        }
+        .sobreMiCard__titulo{
+            grid-template-columns: 1fr;
+            padding: 2em;
+            justify-content: center;
+        }
+
+        .sobreMiCard__texto{
+            grid-template-columns: 1fr;
+            padding: 1em;
+            justify-content: center;
+        }
+
+    }
+}
