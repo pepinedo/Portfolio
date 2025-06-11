@@ -46,7 +46,7 @@
         padding: 1em;
         div {
             font-size: 1em;
-            font-family: var(--fuente-pixel);
+            font-family: var(--fuente-secundaria);
             color: var(--color-fondo);
             p {
                 padding-block: 0.5em;

@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
 
+    z-index: 1;
+
     height: 18em;
     width: 288px;
 
@@ -73,12 +75,12 @@
             gap: 0.2em;
 
             p {
-                color: #93836a;
-                font-size: 0.85em;
-
-                padding-inline: .3em;
-                border: 1px solid #93836a;
-                border-radius: .4em;
+                font-size: 0.9em;
+                color: white;
+                padding-bottom: 5px;
+                padding-top: 2px;
+                padding-inline: 8px;
+                border-radius: 5px;
             }
 
             img {
@@ -104,6 +106,7 @@
             h2 {
                 opacity: 60%;
                 font-weight: 400;
+                font-size: 1em;
             }
 
             p {

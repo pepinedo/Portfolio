@@ -2,20 +2,54 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     justify-self: center;
     
-    background-color: white;
-    padding: 2em;
     border-radius: 1em;
-    width: 300px;
-    
-    gap: 1em;
+    min-width: 100dvw;
+    min-height: 100dvh;
+
+    padding-bottom: 2em;
+
+    background-color: #f7fe00;
+
+    span{
+        font-weight: bold;
+    }
+
+    .pokeDetalles__detalles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 1em;
+        padding: 1em;
+
+        h2 {
+        text-decoration: dashed;
+        }
+    }
+
+    .PokeDetallesInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        background-color: white;
+        width: 300px;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 0 0 5px grey;
+        gap: 1em;
+        z-index: 1;
+    }
+
 
     .pokeDetalles__botones{
         display: flex;
         justify-content: center;
         align-items: center;
+        align-self: center;
 
         gap: 1em;
 
@@ -33,13 +67,67 @@
             }
         }
     }
-
-    .pokeDetalles__nombre {
-        font-size: 1.5em;
-    }
-
+    
     .pokeDetalles__foto {
         width: 200px;
+        align-self: center;
+    }
+
+    .pokeDetalles__nombre {
+        font-size: 2em;
+        align-self: center;
+    }
+
+    .pokeDetalles__tipos {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+        div {
+            display: flex;
+            gap: 5px;
+            p {
+                color: white;
+                padding-block: 3px;
+                padding-inline: 8px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .pokeDetalles__fisico {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            p {
+                padding-block: 3px;
+                padding-inline: 8px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .pokeDetalles__stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 5px;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            p {
+                padding-block: 3px;
+                padding-inline: 8px;
+                border-radius: 5px;
+            }
+        }
     }
 
 }

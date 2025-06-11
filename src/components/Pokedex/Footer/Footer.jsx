@@ -3,9 +3,9 @@ import "./footer.css"
 export function Footer(){
 
     return(
-        <footer className="Footer">
-            <div className="Footer__moflete Footer__moflete--izquerda"></div>
-            <div className="Footer__moflete Footer__moflete--derecha"></div>
+        <footer className="PokeFooter">
+            <div className="PokeFooter__moflete PokeFooter__moflete--izquerda"></div>
+            <div className="PokeFooter__moflete PokeFooter__moflete--derecha"></div>
         </footer>
     )
 }

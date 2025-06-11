@@ -1,20 +1,44 @@
 .pokedexMain {
     background-color: #f7fe00;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
+
+    min-height: 100dvh;
+
+    position: relative;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
 }
 
 :root {
-  /* Colores */
-  --color-sombreado: rgb(156, 156, 156);
-  --color-orejitas: black;
-  --color-mofletes: #ee0000;
+        /* Colores */
+    --color-sombreado: rgb(156, 156, 156);
+    --color-orejitas: black;
+    --color-mofletes: #ee0000;
+
+    /* Tipos */
+    --tipo-acero: #60A1B8;
+    --tipo-agua: #2980EF;
+    --tipo-bicho: #91A119;
+    --tipo-dragon: #4F60E2;
+    --tipo-electrico: #FAC000;
+    --tipo-fantasma: #704170;
+    --tipo-fuego: #E62829;
+    --tipo-hada: #EF71EF;
+    --tipo-hielo: #3DD9FF;
+    --tipo-lucha: #FF8100;
+    --tipo-normal: #A0A2A0;
+    --tipo-planta: #3DA224;
+    --tipo-psiquico: #3DA224;
+    --tipo-roca: #B0AB82;
+    --tipo-sinietro: #50413F;
+    --tipo-tierra: #92501B;
+    --tipo-veneno: #923FCC;
+    --tipo-volador: #81B9EF;
 }
 
-.Home {
+.PokeHome {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +46,7 @@
     color: black;
 }
 
-.Home__cargarMas {
+.PokeHome__cargarMas {
     margin-bottom: 2em;
     background-color: red;
     color: white;
@@ -35,4 +59,63 @@
     &:hover {
         background-color: rgb(0, 0, 0);
     }
+}
+
+
+
+
+/* Tipos */
+.tipo-steel {
+    background-color: #60A1B8;
+}
+.tipo-water {
+    background-color: #2980EF;
+}
+.tipo-bug {
+    background-color: #91A119;
+}
+.tipo-dragon {
+    background-color: #4F60E2;
+}
+.tipo-electric {
+    background-color: #FAC000;
+}
+.tipo-ghost {
+    background-color: #704170;
+}
+.tipo-fire {
+    background-color: #E62829;
+}
+.tipo-fairy {
+    background-color: #EF71EF;
+}
+.tipo-ice {
+    background-color: #3DD9FF;
+}
+.tipo-fighting {
+    background-color: #FF8100;
+}
+.tipo-normal {
+    background-color: #A0A2A0;
+}
+.tipo-grass {
+    background-color: #3DA224;
+}
+.tipo-psychic {
+    background-color: #EF3F7A;
+}
+.tipo-rock {
+    background-color: #B0AB82;
+}
+.tipo-dark {
+    background-color: #50413F;
+}
+.tipo-ground {
+    background-color: #92501B;
+}
+.tipo-poison {
+    background-color: #923FCC;
+}
+.tipo-flying {
+    background-color: #81B9EF;
 }

@@ -36,7 +36,7 @@ export function PokeCard({pokemon}){
                     <div className="pokeCard__bottonCard__nombre-y-tipos__tipos">
                         {pokeData?.types?.map((elem)=>{
                             return(
-                                <p key={elem.type.name}>{elem.type.name}</p>
+                                <p key={elem.type.name} className={`tipo-${elem.type.name}`}>{elem.type.name}</p>
                             )
                         })}
                     </div>

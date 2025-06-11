@@ -40,9 +40,9 @@ export async function getPokemonDataDetalles(id){
     
     const datos2 = await getPokemonData(`https://pokeapi.co/api/v2/pokemon-species/${id}`)
 
-    let {name, types, height, weight} = datos1
+    let {name, types, height, weight, stats} = datos1
     let image = datos1?.sprites?.other["official-artwork"].front_default
     let {evolves_from_species} = datos2
 
-    return {name, image, types, evolves_from_species, height, weight} 
+    return {name, image, types, evolves_from_species, height, weight, stats} 
 }

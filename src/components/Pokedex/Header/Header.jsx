@@ -3,9 +3,9 @@ import "./header.css"
 export function Header(){
 
     return(
-        <header className="Header">
-            <div className="Header__orejita Header__orejita--izquierda"></div>
-            <div className="Header__orejita Header__orejita--derecha"></div>
+        <header className="PokeHeader">
+            <div className="PokeHeader__orejita PokeHeader__orejita--izquierda"></div>
+            <div className="PokeHeader__orejita PokeHeader__orejita--derecha"></div>
         </header>
     )
 }

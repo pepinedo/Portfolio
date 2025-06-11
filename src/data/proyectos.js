@@ -48,13 +48,13 @@ export const proyectos = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
             },
         ],
-        url: "https://github.com/pepinedo/Proyecto-mitad-de-bootcamp-Socratech",
+        url: "https://www.youtube.com/watch?v=k-MP9s17Ylc&ab_channel=Socratech",
         foto: "Portfolio/images/proyectos/hospital.png"
     },
     {
         titulo: "Poke-API",
         descripcion: [
-            "Página web en la que ver y buscar los diferentes pokemons y en la que obtener datos detallados de cada uno. Desarrollada con JavaScript Vanilla usando la API pokeapi.co"
+            "Página web en la que ver y buscar los diferentes pokemons y en la que obtener datos detallados de cada uno. Desarrollada con React, usando la API pokeapi.co"
         ],
         tecnologias: [
             {
@@ -69,8 +69,12 @@ export const proyectos = [
                 nombre: "JavaScript",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
             },
+            {
+                nombre: "React",
+                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            },
         ],
-        url: "",
+        url: "https://pedropinedocobo.com/pokedex",
         foto: "Portfolio/images/proyectos/pokeAPI.jpeg"
     },
     {
@@ -96,6 +100,10 @@ export const proyectos = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
             },
             {
+                nombre: "ReactBootstrap",
+                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg"
+            },
+            {
                 nombre: "NodeJS",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
             },
@@ -104,7 +112,7 @@ export const proyectos = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
             },
         ],
-        url: "https://github.com/pepinedo/We-Play",
+        url: "https://www.youtube.com/watch?v=TvSnDAs5B8A&t=2035s&ab_channel=Socratech",
         foto: "Portfolio/images/proyectos/WePlay.png"
     },
 ]

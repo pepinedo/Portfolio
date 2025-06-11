@@ -1,38 +1,37 @@
-.Header{
+.PokeHeader{
     display: flex;
     justify-content: center;
     align-items: center;
 
     margin: 1em;
 
-    .Header__orejita{
+    .PokeHeader__orejita{
         position: fixed;
-        z-index: -1;
         top: -3em;
         width: 6em;
         height: 6em;
         transform: rotate(45deg);
         background-color: var(--color-orejitas);
     }
-    .Header__orejita--izquierda {
+    .PokeHeader__orejita--izquierda {
         left: -4em;
     }
 
-    .Header__orejita--derecha {
+    .PokeHeader__orejita--derecha {
         right: -4em;
     }
 }
 
 @media (width < 1100px) {
 
-    .Header {
+    .PokeHeader {
         width: 600px;
     }
 }
 
 @media (width < 700px) {
 
-    .Header {
+    .PokeHeader {
         max-width: 302px;
     }
 }

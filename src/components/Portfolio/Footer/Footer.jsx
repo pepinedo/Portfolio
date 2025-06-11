@@ -1,8 +1,8 @@
 import "./footer.css"
 
-export const Footer = () => {
+export const PortfolioFooter = () => {
   return (
-    <footer>
+    <footer className="PortfolioFooter">
         <h1>Contacta conmigo</h1>
         <a href="mailto:pedropinedocobo@gmail.com">pedropinedocobo@gmail.com</a>
         <a href="tel:+34697294074">697294074</a>
