@@ -11,7 +11,7 @@ export function Presentacion(){
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     className="card"
                 >
-                        <img src="Portfolio/images/ppinedo-.jpg" alt="Pedro Pinedo Cobo sonriendo, con traje de chaqueta y los brazos cruzados" />
+                        <img src="Portfolio/images/perfil.jpeg" alt="Pedro Pinedo Cobo sonriendo, con una camiseta negra y con un fondo de color negro y verde" />
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}

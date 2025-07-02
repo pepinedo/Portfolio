@@ -112,7 +112,7 @@ export const proyectos = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
             },
         ],
-        url: "https://www.youtube.com/watch?v=TvSnDAs5B8A&t=2035s&ab_channel=Socratech",
+        url: "https://youtu.be/TvSnDAs5B8A?si=fYzJuSIafN3P_7Sa",
         foto: "Portfolio/images/proyectos/WePlay.png"
     },
 ]

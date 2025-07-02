@@ -4,6 +4,8 @@
     font-size: 1.5em;
     border: 0;
     gap: 10px;
+    text-decoration: none;
+    color: var(--color-secundario);
 
     display: flex;
     flex-direction: column;

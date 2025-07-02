@@ -2,8 +2,7 @@ export const sobreMi = [
     {
         titulo: "Orígenes",
         descripcion: [
-            'Soy Pedro Pinedo Cobo, nací en 1996 en Málaga. Al cumplir los 18 años entré en el grado de Economía, pero no me estimuló lo suficente.',
-            'Al siguiente año decidí estudiar Psicología. Aprendí mucho sobre mí mismo y sobre el comportamiento del ser humano. Me hizo crecer como persona.',
+            'Soy Pedro Pinedo Cobo, nací en 1996 en Málaga. Al cumplir los 18 años comencé mis estudios en Psicología. Aprendí mucho sobre mí mismo y sobre el comportamiento del ser humano. Me hizo crecer como persona.',
             'Siempre me ha gustado ayudar a los demás, así que opté por prepararme el PIR (Psicólogo Interno Residente), oposición que estuve 2 años estudiando. Pero me dí cuenta que necesitaba algo más práctico y me aventuré hacia un nuevo camino.',
         ],
         foto: "Portfolio/images/sobreMi/origenesTeemo.jpeg"
@@ -11,7 +10,7 @@ export const sobreMi = [
     {
         titulo: "¿Y por qué programación?",
         descripcion: [
-            'Debido a que estudíe Psicología, decidí especializarme en RRHH, con el objetivo de ser IT Recruiter. Paralelamente, para complementar mi formación, empecé a estudiar programación en la escuela 42 Málaga donde casualmente encontré mi verdadera pasión.',
+            'Debido a que estudié Psicología, decidí especializarme en RRHH, con el objetivo de ser IT Recruiter. Paralelamente, para complementar mi formación, empecé a estudiar programación en la escuela 42 Málaga donde casualmente encontré mi verdadera pasión.',
             'En 42 aprendí C e hice grandes compañeros y, tras superar diferentes retos, me decanté por el Desarrollo de Software. Más tarde, en Socratech fue donde pude desarrollar los conocimientos que me proporcionaron las habilidades para ser un profesional de este área.',
         ],
         foto: "Portfolio/images/sobreMi/WeLoveCode2.jpeg"

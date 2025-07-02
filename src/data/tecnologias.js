@@ -43,10 +43,6 @@ export const tecnologias = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg"
             },
             {
-                nombre: "Dev Tools",
-                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg"
-            },
-            {
                 nombre: "Socket.io",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg"
             }
@@ -60,10 +56,6 @@ export const tecnologias = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
             },
             {
-                nombre: "NPM",
-                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
-            },
-            {
                 nombre: "Express",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
             },
@@ -74,10 +66,6 @@ export const tecnologias = [
             {
                 nombre: "SpringBoot",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
-            },
-            {
-                nombre: "JSON",
-                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg"
             },
             {
                 nombre: "MySQL",
@@ -129,16 +117,20 @@ export const tecnologias = [
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg"
             },
             {
-                nombre: "CentOS",
-                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/centos/centos-original.svg"
-            },
-            {
                 nombre: "linux",
                 imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
             },
             {
-                nombre: "Ubuntu",
-                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg"
+                nombre: "npm",
+                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+            },
+            {
+                nombre: "pnpm",
+                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pnpm/pnpm-original-wordmark.svg"
+            },
+            {
+                nombre: "JSON",
+                imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg"
             },
         ]
     },
