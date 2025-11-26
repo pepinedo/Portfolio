@@ -1,5 +1,20 @@
 export const estudios = [
     {
+        titulo: "Desarrollo de Aplicaciones Web",
+        empresa: "Cesur",
+        fecha: "Sept.2025 - Actualidad",
+        detalles: [
+            "Programación frontend y backend",
+            "Gestión de bases de datos",
+            "Desarrollo de aplicaciones completas",
+            "Control de versiones y trabajo en equipo",
+            "Diseño y consumo de APIs",
+            "Despliegue de aplicaciones web",
+            "Metodologías ágiles de desarrollo",
+            "Resolución de problemas técnicos"
+        ]
+    },
+    {
         titulo: "Bootcamp Java Developer",
         empresa: "Fundación Esplai",
         fecha: "Abr.2025 - Jul.2025",
